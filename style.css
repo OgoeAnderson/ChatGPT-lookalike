@@ -1,4 +1,11 @@
-/* NAVIGATION BAR */
+body {
+  background-image: url('./assets/01.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+ 
+ /* NAVIGATION BAR */
 
 nav {
   height: 100px;
@@ -39,6 +46,7 @@ h5,
 h6 {
   text-decoration: none;
   list-style: none;
+  color: aliceblue;
 }
 
 /* LANDING PAGE */
@@ -49,6 +57,12 @@ h6 {
   justify-content: center;
   align-items: center;
   }
+
+  .about_GPT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .about-image {
   width: 300px;
@@ -57,6 +71,12 @@ h6 {
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
+  }
+
+  .logo__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .about-info {
@@ -106,7 +126,100 @@ button {
  }
 
 
+ /* PRICING */
+
+ .price-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.plus_plan {
+  background-color: blue;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.free_plan {
+  background-color: aqua;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  box-shadow: 2 20px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 20px;
+
+}
+
+.plus:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.plus_plan h2 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.free_plan:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.free_plan h2 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.plus_price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff6600;
+  margin: 20px 0;
+}
+
+.plus_benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plus_benefits li {
+  margin-bottom: 10px;
+}
+
+.free_price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff6600;
+  margin: 20px 0;
+}
+
+.free_benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.free_benefits li {
+  margin-bottom: 10px;
+}
+
+
+
 /* FAQ's */
+
+#faq-section {
+  background-image: none;
+}
 
 .faq-section {
   max-width: 800px;
@@ -116,10 +229,9 @@ button {
 .faq-section dt {
   font-weight: bold;
   margin-top: 20px;
-}
+} */
 
 .faq-section dd {
   margin-left: 0;
   padding-left: 20px;
 }
-
