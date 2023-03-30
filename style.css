@@ -1,11 +1,10 @@
 body {
-  background-image: url('./assets/01.jpg');
+  background-image: url("./assets/01.jpg");
   background-size: cover;
   background-position: center;
 }
 
- 
- /* NAVIGATION BAR */
+/* NAVIGATION BAR */
 
 nav {
   height: 100px;
@@ -46,7 +45,6 @@ h5,
 h6 {
   text-decoration: none;
   list-style: none;
-  color: aliceblue;
 }
 
 /* LANDING PAGE */
@@ -56,44 +54,44 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
+}
 
-  .about_GPT {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about-image {
+.about_GPT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
-  }
+}
 
-  .logo__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .about-info {
+.logo__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-info {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2px;
-  }
-  
-  .about-para {
+}
+
+.about-para {
   font-size: 20px;
   margin-bottom: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
   word-break: normal;
-  }
+}
 
 /* BUTTON */
 
@@ -106,29 +104,28 @@ button {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-size: 15px;
-  transition: all .5s ease;
- }
- 
- button:hover {
+  transition: all 0.5s ease;
+}
+
+button:hover {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
- }
- 
- button:active {
+}
+
+button:active {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
- }
+}
 
+/* PRICING */
 
- /* PRICING */
-
- .price-list {
+.price-list {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -138,31 +135,31 @@ button {
 }
 
 .plus_plan {
-  background-color: blue;
+  background-color: #003087;
   border: 1px solid #ddd;
   border-radius: 24px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-  width: 300px;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.free_plan {
-  background-color: aqua;
-  border: 1px solid #ddd;
-  border-radius: 24px;
-  box-shadow: 2 20px 8px rgba(0,0,0,0.1);
+  box-shadow: 2 20px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   width: 300px;
   transition: box-shadow 0.3s ease-in-out;
   margin: 20px;
-
 }
 
-.plus:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.free_plan {
+  background-color: #003087;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  box-shadow: 2 20px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 20px;
+}
+
+.plus_plan:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .plus_plan h2 {
@@ -171,19 +168,20 @@ button {
 }
 
 .free_plan:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .free_plan h2 {
   font-size: 28px;
   margin-top: 0;
+  color: 00000;
 }
 
 .plus_price {
   font-size: 32px;
   font-weight: bold;
-  color: #ff6600;
-  margin: 20px 0;
+  color: #0070ba;
+  margin: 20px 10px;
 }
 
 .plus_benefits {
@@ -199,7 +197,7 @@ button {
 .free_price {
   font-size: 32px;
   font-weight: bold;
-  color: #ff6600;
+  color: #0070ba;
   margin: 20px 0;
 }
 
@@ -213,7 +211,26 @@ button {
   margin-bottom: 10px;
 }
 
+/* TEXT FOR HEADER */
 
+.header_sub {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 42px;
+  color: #e6e0d9;
+  margin-bottom: 10px;
+}
+
+.sub-text_tier {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 23px;
+}
 
 /* FAQ's */
 
@@ -229,9 +246,8 @@ button {
 .faq-section dt {
   font-weight: bold;
   margin-top: 20px;
-} */
-
-.faq-section dd {
+}
+*/ .faq-section dd {
   margin-left: 0;
   padding-left: 20px;
 }
